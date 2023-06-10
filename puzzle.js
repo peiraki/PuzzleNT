@@ -10,7 +10,7 @@ window.onload = function() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let tile = document.createElement("img");
-            tile.src = "blank.jpg";
+            tile.src = "https://amazing-entremet-0a1882.netlify.app/blank.jpg";
             tile.addEventListener("dragstart", dragStart); 
             tile.addEventListener("dragover", dragOver);   
             tile.addEventListener("dragenter", dragEnter); 
