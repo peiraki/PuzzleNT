@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puzzle</title>
+        <link rel="stylesheet" href="puzzle.css">
+
+    </head>
+
+    <body class="prevent-select" onclick="play()" ondblclick="stopPlay()">
+        <div class="gameInstruction">Game Instruction
+            <ul>
+                <li>Hold and Drag bottom pieces to canva</li>
+                <li>One click = Play background sound</li>
+                <li>Double click = Pause background sound</li>
+                <li>Key top left corner</li>
+            </ul>
+        </div>
+        <div class="backgroundo">
+            <video id="video" src="Killages.mp4" autoplay></video>
+        </div>
+        <div class="showPng" onclick="showOrHide()">
+           
+            <img id="showImg" src="nt.png" alt="">
+        </div>
+        <h1><p><img width="40"  src="key.png" alt="">&nbsp;Puzzle</p></h1>
+        <div id="board">
+        </div>
+        <h1>Turns: <span id="turns">0</span></h1>
+        <div id="pieces"></div>
+    </body>
+    <script src="puzzle.js"></script>
+
+</html>
